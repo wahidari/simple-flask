@@ -8,13 +8,13 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 def page_home():
     return render_template("index.html")
 
-@app.route("/admin")
-def page_data():
-    datatabelberita = database.getTabelBerita()
+@app.route("/users")
+def page_users():
+    datatabelusers = database.getTabelUsers()
     # for i in datatabelberita:
         # print(i[1])
     # return render_template("admin.html", value=datatabelberita)
-    return render_template("data.html", data=datatabelberita)
+    return render_template("users.html", data=datatabelusers)
 
 if __name__ == "__main__":
     app.jinja_env.auto_reload = True

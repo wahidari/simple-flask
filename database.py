@@ -4,14 +4,14 @@ import mysql.connector
 db = mysql.connector.connect(user='root',
                              password='',
                              host='127.0.0.1',
-                             database='datates')
+                             database='flask')
 
 # Cek if Database is Connected
 if db.is_connected():
     print("Database Connected !")
 
-def getTabelBerita():
+def getTabelUsers():
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM `tb_berita`")
-    datatabelberita = cursor.fetchall()
-    return datatabelberita
+    cursor.execute("SELECT * FROM `users`")
+    datatabelusers = cursor.fetchall()
+    return datatabelusers
