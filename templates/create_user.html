@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Data</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 </head>
@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="{{url_for('page_home')}}">Home</a>
+                            <a class="nav-link" href="{{url_for('page_home')}}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url_for('page_users')}}">Users</a>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="container mt-4">
-        <h2>Home Page</h2>
+        
     </div>
 
 {% endblock %}

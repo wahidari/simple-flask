@@ -16,6 +16,10 @@ def page_users():
     # return render_template("admin.html", value=datatabelberita)
     return render_template("users.html", data=datatabelusers)
 
+@app.route("/users/new")
+def create_users():
+    return render_template("create_user.html")
+
 if __name__ == "__main__":
     app.jinja_env.auto_reload = True
     app.config['TEMPLATES_AUTO_RELOAD'] = True
