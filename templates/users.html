@@ -30,7 +30,10 @@
     </div>
 
     <div class="container mt-4">
-        <h2 class="pb-3">Users Page</h2>
+        <div class="d-flex align-items-center justify-content-between pb-3">
+            <h2>Users Page</h2>
+            <a href="" class="btn btn-success">Tambah</a>
+        </div>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -38,6 +41,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,6 +51,10 @@
                     <td>{{row[1]}}</td>
                     <td>{{row[2]}}</td>
                     <td>{{row[3]}}</td>
+                    <td>
+                        <a href="" class="text-decoration-none text-primary mr-2">Edit</a>
+                        <a href="" class="text-decoration-none text-danger">Delete</a>
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
